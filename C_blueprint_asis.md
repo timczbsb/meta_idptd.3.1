@@ -39,8 +39,8 @@
 | Camada | Atividades |
 |---|---|
 | **Evidências Físicas** | Celular/telefone fixo; ambiente da emergência; estado visível da vítima |
-| **Ações do Solicitante** | Presencia ou descobre emergência → decide qual número discar (crença prévia: "Bombeiro para acidente, SAMU para mal súbito") → disca 192 ou 193 |
-| **Ações da Vítima** | Sofre o evento (mal súbito, trauma, incêndio, etc.); se inconsciente → não age; se consciente → pede ajuda |
+| **Ações do Cidadão/Usuário (Solicitante)** | Presencia ou descobre emergência → decide qual número discar (crença prévia: "Bombeiro para acidente, SAMU para mal súbito") → disca 192 ou 193 |
+| **Ações do Cidadão/Usuário (Vítima)** | Sofre o evento (mal súbito, trauma, incêndio, etc.); se inconsciente → não age; se consciente → pede ajuda |
 | `--- LINHA DE INTERAÇÃO ---` | *(não cruzada — cidadão ainda não contactou o serviço)* |
 | **Frontstage CBMDF** | — |
 | **Frontstage SAMU** | — |
@@ -58,8 +58,8 @@
 | Camada | Atividades |
 |---|---|
 | **Evidências Físicas** | Tom de chamada (URA ou discagem direta); gravação da ligação; voz do atendente (TARM/Operador); número de protocolo (se fornecido) |
-| **Ações do Solicitante** | Aguarda atendimento → relata emergência → informa endereço → responde perguntas de triagem |
-| **Ações da Vítima** | *(ainda na cena, sem interação com a central)* |
+| **Ações do Cidadão/Usuário (Solicitante)** | Aguarda atendimento → relata emergência → informa endereço → responde perguntas de triagem |
+| **Ações do Cidadão/Usuário (Vítima)** | *(ainda na cena, sem interação com a central)* |
 | `--- LINHA DE INTERAÇÃO ---` | ✦ **Cruzada:** SOL ↔ OPE (193) ou SOL ↔ TARM (192) |
 | **Frontstage CBMDF** | OPE atende 193 → identifica natureza da emergência → valida endereço verbalmente → decide se mantém a ocorrência ou transfere ao SAMU (se natureza clínica) |
 | **Frontstage SAMU** | TARM atende 192 → aplica triagem protocolada → valida endereço verbalmente → transfere ao MED se gravidade confirmada |
@@ -77,8 +77,8 @@
 | Camada | Atividades |
 |---|---|
 | **Evidências Físicas** | (se orientação telefônica) voz do MED; (se despachado) som de sirene ao longe; silêncio e espera |
-| **Ações do Solicitante** | (se orientado) recebe instruções telefônicas do MED e as executa; (se despachado) aguarda viatura; pode religar se a demora for excessiva |
-| **Ações da Vítima** | Recebe primeiros socorros do SOL (se orientado pelo MED); aguarda |
+| **Ações do Cidadão/Usuário (Solicitante)** | (se orientado) recebe instruções telefônicas do MED e as executa; (se despachado) aguarda viatura; pode religar se a demora for excessiva |
+| **Ações do Cidadão/Usuário (Vítima)** | Recebe primeiros socorros do SOL (se orientado pelo MED); aguarda |
 | `--- LINHA DE INTERAÇÃO ---` | ✦ **Cruzada (condicional):** MED ↔ SOL (apenas em casos de orientação telefônica) |
 | **Frontstage CBMDF** | — |
 | **Frontstage SAMU** | MED orienta SOL telefonicamente (apenas em casos de baixa gravidade onde o envio de viatura é dispensado) |
@@ -96,8 +96,8 @@
 | Camada | Atividades |
 |---|---|
 | **Evidências Físicas** | Viatura (USB/USA/UR); uniforme e EPI dos bombeiros/socorristas; maca; equipamentos visíveis (desfibrilador, kit de trauma, cilindro de O₂); RAPH (papel ou digital) |
-| **Ações do Solicitante** | Recebe a equipe; acompanha o atendimento; fornece informações adicionais sobre o ocorrido |
-| **Ações da Vítima** | É examinada pela equipe; recebe procedimentos (imobilização, acesso venoso, O₂, medicação); é preparada para transporte |
+| **Ações do Cidadão/Usuário (Solicitante)** | Recebe a equipe; acompanha o atendimento; fornece informações adicionais sobre o ocorrido |
+| **Ações do Cidadão/Usuário (Vítima)** | É examinada pela equipe; recebe procedimentos (imobilização, acesso venoso, O₂, medicação); é preparada para transporte |
 | `--- LINHA DE INTERAÇÃO ---` | ✦ **Cruzada:** EQP-C/EQP-S ↔ VIT e SOL |
 | **Frontstage CBMDF** | EQP-C chega ao local → estabiliza paciente → realiza procedimentos → comunica-se com vítima e acompanhantes |
 | **Frontstage SAMU** | EQP-S chega ao local → estabiliza paciente → realiza procedimentos → comunica-se com vítima e acompanhantes |
@@ -115,8 +115,8 @@
 | Camada | Atividades |
 |---|---|
 | **Evidências Físicas** | Fachada do hospital; maca hospitalar; prontuário; pulseira de identificação do paciente; ficha de transferência |
-| **Ações do Solicitante** | *(pode acompanhar até o hospital — facultativo — ou encerra sua participação na cena)* |
-| **Ações da Vítima** | É transferida da maca do APH para a maca hospitalar; é identificada formalmente pelo hospital |
+| **Ações do Cidadão/Usuário (Solicitante)** | *(pode acompanhar até o hospital — facultativo — ou encerra sua participação na cena)* |
+| **Ações do Cidadão/Usuário (Vítima)** | É transferida da maca do APH para a maca hospitalar; é identificada formalmente pelo hospital |
 | `--- LINHA DE INTERAÇÃO ---` | *(não cruzada — interação é equipe ↔ hospital, não equipe ↔ cidadão)* |
 | **Frontstage CBMDF** | EQP-C chega ao hospital → identifica o paciente (nome, idade, quadro, procedimentos realizados) → passa o caso ao enfermeiro/médico plantonista |
 | **Frontstage SAMU** | EQP-S chega ao hospital → identifica o paciente (nome, idade, quadro, procedimentos realizados) → passa o caso ao enfermeiro/médico plantonista |
@@ -134,8 +134,8 @@
 | Camada | Atividades |
 |---|---|
 | **Evidências Físicas** | RAPH preenchido e assinado; relatório estatístico mensal (CID, tipo de ocorrência, tempo de resposta) |
-| **Ações do Solicitante** | — |
-| **Ações da Vítima** | — |
+| **Ações do Cidadão/Usuário (Solicitante)** | — |
+| **Ações do Cidadão/Usuário (Vítima)** | — |
 | `--- LINHA DE INTERAÇÃO ---` | *(não cruzada)* |
 | **Frontstage CBMDF** | — |
 | **Frontstage SAMU** | — |
