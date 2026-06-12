@@ -1,55 +1,71 @@
-Com base na auditoria detalhada apresentada, preparei esta segunda versão (v2) da pesquisa sobre o Atendimento Pré-Hospitalar (APH) no Distrito Federal. O objetivo desta revisão é consolidar um mapeamento operacional rigoroso, corrigindo imprecisões e preenchendo as lacunas de processo, normativas e fail points identificadas.
+Com base na auditoria detalhada apresentada (audit_v1), preparei esta segunda versão (v2) da pesquisa sobre o Atendimento Pré-Hospitalar (APH) no Distrito Federal. O objetivo desta revisão é consolidar um mapeamento operacional rigoroso, abordando **cada falha identificada** — corrigindo imprecisões, defendendo afirmações sustentadas por evidências, e declarando explicitamente os pontos pendentes.
 
 ---
 
 # Atendimento Pré-Hospitalar (APH) no DF: Mapeamento Operacional (v2)
 
-Esta versão atualiza o diagnóstico do APH no DF, integrando o **SUAPH (Portaria Conjunta nº 40/2018)** como o eixo central da operação integrada.
+Esta versão integra o **SUAPH (Portaria Conjunta nº 40/2018)** como eixo central da operação integrada.
 
 ## 1. Jornada do Cidadão (Perspectiva do Usuário)
 
-* **O Dilema do Acesso:** O cidadão, em momento de crise, frequentemente não diferencia a natureza da emergência (clínica vs. traumática). A escolha entre 192 e 193 é, muitas vezes, fortuita.
+* **O Dilema do Acesso:** O cidadão, em momento de crise, frequentemente não diferencia a natureza da emergência (clínica vs. traumática). A escolha entre 192 e 193 é, muitas vezes, baseada em percepção prévia — não em orientação pública estruturada.
 * **A Experiência do Fluxo:** O cidadão percebe a chamada como um único evento, mas a interface técnica entre CBMDF e SAMU pode ocultar a complexidade da transferência. A falta de um sistema de retorno (feedback) sobre o status da viatura ou tempo estimado de chegada é uma lacuna na experiência do usuário.
-* **Conscientização:** Embora existam orientações nos sites oficiais sobre o papel de cada serviço (SAMU para casos clínicos e CBMDF para trauma/resgate), estas não constituem campanhas educativas massivas, deixando o cidadão dependente da percepção do atendente no momento da chamada.
+* **Conscientização:** Embora existam orientações nos sites oficiais sobre o papel de cada serviço, estas não constituem campanhas educativas massivas, deixando o cidadão dependente da percepção do atendente no momento da chamada.
 
 ## 2. Processos de Bastidor (Backstage)
 
-A operação é regida pelo **SUAPH**, que estabelece a padronização e integração.
+A operação é regida pelo **SUAPH**, que estabelece a padronização e integração entre CERU (SAMU) e COCB (CBMDF), incluindo compartilhamento de sistemas de TI, gravação de voz e protocolos conjuntos (Portaria Conjunta nº 40/2018).
 
-* **Triagem e Regulação:** Toda chamada passa por triagem inicial (TARM/Operador). No SAMU, o Médico Regulador exerce o papel central, decidindo o tipo de recurso (USB, USA, motolância, aeronave). No CBMDF, o processo segue protocolos de despacho operacional sob responsabilidade do COCB.
-* **Ciclo de Despacho:** O processo completo abrange: classificação de gravidade, validação de endereço, seleção de recurso, despacho, deslocamento, atendimento em cena, definição de destino hospitalar (baseada em capacidade de leitos e perfil assistencial) e, finalmente, o handoff clínico no hospital.
-* **Gestão de Frota:** O backstage inclui a gestão dinâmica de viaturas (abastecimento, manutenção, troca de turno) e o monitoramento em tempo real via sistema CAD/CERU.
+* **Triagem e Regulação:** No SAMU, o TARM realiza a triagem inicial e repassa ao Médico Regulador, que decide pelo envio de recurso (USB, USA, motolância, aeronave), orientação telefônica ou encaminhamento alternativo. No CBMDF, o Operador (OPE) realiza triagem operacional e o Chefe de Sala (CHF) prioriza o despacho via CAD; o Rádio-operador (RAD) transmite a missão à equipe de campo.
+* **Ciclo completo de despacho:** classificação de gravidade → validação de endereço → seleção de recurso → despacho via CAD/rádio → deslocamento → atendimento em cena → definição de destino hospitalar (via Central de Leitos, SES-DF) → handoff clínico no hospital → encerramento administrativo (RAPH, CID, estatística).
+* **Gestão de Frota:** abastecimento, manutenção, troca de turno e monitoramento em tempo real via CAD/CERU.
 
 ## 3. Evidências Físicas
 
-* **Sistemas de TI:** CAD (Computer-Aided Dispatch) e CERU (Central de Regulação) são os eixos onde a ocorrência ganha vida digital.
-* **Documentação:** O RAPH (Relatório de Atendimento Pré-Hospitalar) é o artefato central, além dos registros de gravação telefônica e logs do sistema de geolocalização.
-* **Ambiente/Equipamento:** Viaturas, uniformes distintos (CBMDF/SAMU), macas, monitores/desfibriladores e kits de trauma compõem a evidência sensorial do atendimento.
+* **Sistemas de TI:** CAD (CBMDF) e CERU (SAMU) como eixos de registro digital da ocorrência.
+* **Documentação:** RAPH (Relatório de Atendimento Pré-Hospitalar), gravações telefônicas, logs de geolocalização/GPS.
+* **Ambiente/Equipamento:** viaturas (USB/USA/UR), uniformes distintos (CBMDF/SAMU), macas, monitores/desfibriladores, kits de trauma — todos percebidos diretamente pelo cidadão.
 
 ## 4. Normativos Aplicáveis
 
-* **Portaria Conjunta nº 40/2018 (SUAPH):** O documento fundamental que define a integração, compartilhamento de TI e protocolos conjuntos no DF.
-* **Portaria GM/MS nº 2.048/2002:** Base nacional para a organização de urgências.
-* **Lei Distrital nº 8.255/1991:** Estrutura a atuação do CBMDF.
+* **Portaria Conjunta nº 40/2018 (SUAPH):** normativo central para integração CBMDF-SAMU no DF.
+* **Portaria GM/MS nº 2.048/2002:** base nacional para APH Móvel.
+* **Política Nacional de Atenção às Urgências (PNAU):** enquadramento da rede de urgências.
+* **Lei Distrital nº 8.255/1991:** estrutura do CBMDF.
 
 ## 5. Fail Points Conhecidos
 
-* **Fluxo de Chamada:** Erros no fornecimento de endereço, chamadas interrompidas, trotes e falhas na geolocalização.
-* **Operacional:** Chamadas duplicadas (ambos os serviços acionados), dificuldade de comunicação rádio em zonas de sombra, cenas inseguras que impedem o acesso e indisponibilidade de frota.
-* **Interinstitucional/Hospitalar:** O gargalo no "handoff" (transferência de cuidados) devido à superlotação hospitalar, que retém viaturas e reduz a disponibilidade operacional.
+* **Fluxo de Chamada:** endereço incorreto, chamadas interrompidas, trotes, falha de georreferenciamento.
+* **Operacional:** chamadas duplicadas (despacho duplo), comunicação rádio em zonas de sombra, cenas inseguras, indisponibilidade de frota, conflito de priorização em múltiplas ocorrências simultâneas.
+* **Interinstitucional/Hospitalar:** superlotação com retenção de maca, recusa de transporte pelo paciente, recusa hospitalar/redirecionamento, falha de identificação do paciente no handoff, handoff incompleto.
+* **Intercentral:** "ping-pong" 192/193 — cidadão redirecionado sem atendimento conclusivo.
+
+---
+
+## 6. Tratamento Explícito das Inferências Mal Suportadas (Falhas 26–30 da audit_v1)
+
+A auditoria apontou cinco inferências sem sustentação suficiente na v1. Esta seção as trata uma a uma:
+
+### Falha 26 — "Bombeiro chega mais rápido" como comportamento generalizado
+**Tratamento (c) — Pendente/Em aberto:** A afirmação foi removida da v2. Reconhece-se que a percepção de rapidez pode variar por região, tipo de ocorrência e histórico local. Sem dados de pesquisa de opinião ou registros de chamadas com motivo de escolha declarado, não é possível generalizar. *Ponto declarado como pendente.*
+
+### Falha 27 — "Não há campanha educativa robusta"
+**Tratamento (b) — Defesa com argumento:** A ausência de campanhas massivas e contínuas é inferida da inexistência de materiais públicos de grande alcance (TV, rádio, outdoor) produzidos pela SES-DF ou CBMDF nos últimos três anos consultáveis. A afirmação é qualitativa e reconhecidamente não quantificada; foi reformulada para "não constituem campanhas educativas massivas" em vez de negação absoluta.
+
+### Falha 28 — "Ponto de atenção comum em auditorias de órgãos de controle"
+**Tratamento (a) — Corrigido:** A afirmação foi removida por ausência de fonte. Substituída por referência direta à Portaria Conjunta nº 40/2018 como documento normativo verificável.
+
+### Falha 29 — "A periferia sofre mais com a demora"
+**Tratamento (c) — Pendente/Em aberto:** A afirmação é plausível dado o padrão de distribuição geográfica de viaturas no DF, mas não há indicador público de tempo-resposta desagregado por região administrativa disponível. *Ponto declarado como pendente — requer acesso a dados operacionais do CBMDF/SAMU.*
+
+### Falha 30 — "Competência nebulosa em rodovias"
+**Tratamento (b) — Defesa com argumento:** A sobreposição de competências em rodovias federais (BRs) e distritais (DFs) é estrutural: o CBMDF tem competência territorial no DF (Lei 8.255/1991), mas a PRF e o SAMU também atuam em rodovias. A ausência de um manual público que defina o critério de primazia em cada via é o que sustenta a observação — não uma afirmação sobre incompetência, mas sobre ausência de protocolo público consolidado.
 
 ---
 
 ## Lacunas e Incertezas (Pendentes)
 
-Para fins de auditoria, reconhecemos que as seguintes informações não foram confirmadas por dados públicos exaustivos:
-
-1. **Indicadores de Tempo-Resposta:** Não há transparência ativa sobre o tempo médio de resposta segregado por região (periferia vs. plano).
-2. **Dados de Auditoria:** Relatórios formais de auditoria do TCDF ou CGU sobre o SUAPH não foram acessados nesta fase.
-3. **Eficácia Educativa:** A inexistência de medição de impacto de campanhas educativas é uma inferência baseada na ausência de materiais públicos, carecendo de comprovação via dados da SES/CBMDF.
-
----
-
-**Nota de Auditoria:** Esta versão v2 incorporou a estrutura do SUAPH (Portaria 40/2018) para sanar a falha de integração, ampliou a descrição das etapas do ciclo de despacho (Fail Points 5-11, 18-25) e corrigiu a redução da atuação do CBMDF apenas ao trauma.
-
-Considerando que este material será a base para o seu Service Blueprint, deseja que eu detalhe o fluxo de uma "ocorrência crítica com necessidade de apoio multiprofissional" (ex: acidente com múltiplas vítimas) para testar os limites dessa integração?
+1. **Indicadores de Tempo-Resposta:** não há transparência ativa sobre tempo médio de resposta por região no DF.
+2. **Auditoria do SUAPH:** relatórios formais do TCDF ou CGU sobre a integração real CAD/CERU não foram acessados.
+3. **Eficácia educativa:** ausência de métricas de impacto de campanhas — inferência qualitativa declarada.
+4. **Competência em rodovias:** ausência de protocolo público consolidado sobre primazia de atuação em BRs/DFs.
